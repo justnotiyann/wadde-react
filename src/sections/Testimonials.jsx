@@ -45,7 +45,7 @@ function Testimonials() {
     return (
         <SectionWrapper>
             <div className="overflow-hidden flex flex-col lg:flex-row gap-5 justify-between items-start">
-                <div className="overflow-scroll w-full lg:w-1/3 flex flex-col gap-5 mb-10 ">
+                <div className="overflow-scroll lg:overflow-auto w-full lg:w-1/3 flex flex-col gap-5 mb-10 ">
                     {data.map((person, index) => (
                         <PersonCard key={index} name={person.name} role={person.role} active={person.active} onClick={person.onClick} image={person.image} />
                     ))}
