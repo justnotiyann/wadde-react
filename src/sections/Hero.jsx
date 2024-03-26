@@ -13,8 +13,8 @@ function CompanyListItem({ image }) {
 
 function Hero() {
     return (
-        <div className="relative">
-            <div className="mt-24 lg:pt-30 mb-8 min-h-screen">
+        <div className="relative overflow-hidden">
+            <div className="mt-24 lg:pt-30 min-h-screen">
                 <div className="max-w-7xl mx-auto py-16 px-4 min-h-screen lg:flex lg:flex-col lg:items-center lg:justify-center">
                     <img src="./assets/hero/hero-image.png" alt="hero-image" className="w-full lg:hidden mx-auto" />
 
@@ -48,8 +48,8 @@ function Hero() {
                     </h4>
 
                     <MarqueeWrapper>
-                        <div class="overflow-hidden w-full mx-auto py-5">
-                            <ul class="py-3 inline-flex space-x-4 max-w-full items-center">
+                        <div className="overflow-hidden w-full mx-auto py-5">
+                            <ul className="py-3 inline-flex space-x-4 max-w-full items-center">
                                 {companyImages.map((image, key) => {
                                     return <CompanyListItem key={key} image={image} />;
                                 })}
@@ -58,8 +58,8 @@ function Hero() {
                     </MarqueeWrapper>
 
                     <MarqueeWrapper direction="right">
-                        <div class="overflow-hidden w-full mx-auto py-5">
-                            <ul class="py-3 inline-flex space-x-4 max-w-full items-center">
+                        <div className="overflow-hidden w-full mx-auto py-5">
+                            <ul className="py-3 inline-flex space-x-4 max-w-full items-center">
                                 {companyImages.map((image, index) => {
                                     return <CompanyListItem key={index} image={image} />;
                                 })}

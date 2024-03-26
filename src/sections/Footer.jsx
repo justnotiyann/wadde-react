@@ -55,7 +55,7 @@ function Footer() {
                             </li>
                         </ul>
 
-                        <p className="text-sm lg:text-md text-primary-gray lg:text-center">Copyright © 2023 All Rights Reserved by XB</p>
+                        <p className="text-sm lg:text-md text-primary-gray lg:text-start">Copyright © 2023 All Rights Reserved by XB</p>
                     </div>
                 </div>
             </div>

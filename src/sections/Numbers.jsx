@@ -1,3 +1,5 @@
+import SectionWrapper from "../utils/SectionWrapper";
+
 const cardNumberItems = [
     [
         {
@@ -25,11 +27,11 @@ const cardNumberItems = [
 
 function CardNumber({ number, iconSrc, description }) {
     return (
-        <div className="w-full lg:w-1/2 p-5  text-center">
-            <h5 className="text-primary-blue font-bold text-6xl mb-5">{number}</h5>
+        <div className="w-full text-center my-5">
+            <h5 className="text-primary-blue font-bold text-6xl">{number}</h5>
             <div className="flex justify-center items-center gap-x-2">
                 <img src={iconSrc} alt={description} />
-                <p className="text-primary-gray">{description}</p>
+                <p className="text-primary-gray lg:text-lg">{description}</p>
             </div>
         </div>
     );
@@ -37,19 +39,17 @@ function CardNumber({ number, iconSrc, description }) {
 
 function Numbers() {
     return (
-        <div>
-            <div className="py-10 px-2 lg:p-10 lg:my-14 m-10">
-                <div>
-                    {cardNumberItems.map((row, rowIndex) => (
-                        <div key={rowIndex} className="flex flex-col lg:flex-row justify-center items-center gap-5">
-                            {row.map((item, itemIndex) => (
-                                <CardNumber key={itemIndex} number={item.number} iconSrc={item.icon} description={item.description} />
-                            ))}
-                        </div>
-                    ))}
-                </div>
+        <SectionWrapper>
+            <div className="">
+                {cardNumberItems.map((row, rowIndex) => (
+                    <div key={rowIndex} className="flex flex-col lg:flex-row justify-between items-center gap-10">
+                        {row.map((item, itemIndex) => (
+                            <CardNumber key={itemIndex} number={item.number} iconSrc={item.icon} description={item.description} />
+                        ))}
+                    </div>
+                ))}
             </div>
-        </div>
+        </SectionWrapper>
     );
 }
 

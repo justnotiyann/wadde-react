@@ -2,12 +2,12 @@ const notificationBadgesItem = [
     {
         imgSrc: "./assets/icon/check-full.png",
         text: "Easily Manage and Access with Our Mobile App",
-        className: "top-24 right-[-70px] lg:top-14 lg:right-[-40px] mb-10",
+        className: "top-8 right-[-70px] lg:top-14 lg:right-[-40px] mb-10",
     },
     {
         imgSrc: "./assets/icon/check-full.png",
         text: "Enhanced Security Infrastructure",
-        className: "top-36 right-[-80px] lg:top-[150px] lg:right-[-50px] mb-10",
+        className: "top-20 right-[-80px] lg:top-[150px] lg:right-[-50px] mb-10",
     },
 ];
 

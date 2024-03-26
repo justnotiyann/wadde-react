@@ -7,5 +7,5 @@ input:focus {
 }
 
 h3 {
-    @apply font-bold text-3xl lg:text-6xl text-white  mb-5;
+    @apply font-bold text-3xl lg:text-5xl text-white  mb-5;
 }

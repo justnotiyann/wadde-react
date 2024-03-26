@@ -4,15 +4,15 @@ import { NotificationBadge, notificationBadgesItem } from "../components/Noficat
 function Embark() {
     return (
         <SectionWrapper>
-            <div className="relative py-10 px-2 m-10  flex gap-5 flex-col lg:flex-row lg:justify-center lg:items-center ">
-                <div className="lg:relative w-full lg:w-1/2 mb-10">
-                    <img src="./assets/image/computer.png" alt="computer" className="w-max h-max lg:w-2/3 mx-auto" />
+            <div className="relative flex gap-5 flex-col lg:flex-row lg:justify-between lg:items-center ">
+                <div className="w-full lg:order-2 lg:relative lg:w-1/2 ">
+                    <img src="./assets/image/computer.png" alt="computer" className="w-max h-max lg:w-[472px] mx-auto" />
                     {notificationBadgesItem.map((badge, index) => (
                         <NotificationBadge key={index} imgSrc={badge.imgSrc} text={badge.text} className={badge.className} />
                     ))}
                 </div>
 
-                <div className="w-full lg:w-1/3">
+                <div className="w-full lg:order-1 lg:w-1/3 ">
                     <p className="text-primary-brand lg:text-2xl mb-2">About Us</p>
                     <h3 className="mb-10">
                         Embark on Your <br />

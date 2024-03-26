@@ -1,5 +1,5 @@
-function MainWrapper({ children }) {
-    return <div className="overflow-hidden">{children}</div>;
+function MainWrapper({ children, className }) {
+    return <div className={` ${className}`}>{children}</div>;
 }
 
 export default MainWrapper;

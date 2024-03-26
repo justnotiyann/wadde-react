@@ -7,8 +7,9 @@ function App() {
         <>
             <Navbar />
 
+            <Hero />
+
             <MainWrapper>
-                <Hero />
                 <Cards />
                 <Embark />
                 <Testimonials />
